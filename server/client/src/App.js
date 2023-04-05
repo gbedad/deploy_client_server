@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [data, setData] = useState(null);
   const [name, setName] = useState(null);
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  
   const send = () => {
    if(name){
     fetch(`/api/${name}`)
